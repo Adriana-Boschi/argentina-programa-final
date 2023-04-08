@@ -1,0 +1,267 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+
+header {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+}
+
+header div img class Imagen personajes {
+  width: 100px;
+}
+
+header div img class Imagen logo {
+  width: 300px 
+  margin 10px
+}
+
+/*Display Flex*/
+nav ul {
+
+  list-style: none;
+  display: flex;
+}
+
+
+
+header nav ul li {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(233, 229, 16, 0.938);
+  border: 3px solid black;
+
+
+}
+
+header nav ul li a {
+  color: rgb(6, 170, 235);
+  font-family: cursive;
+
+
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+.element.style {
+  vertical-align: inherit;
+}
+
+
+
+.contenedor {
+  display: flex;
+  padding: 30px;
+  margin: 20px;
+
+
+
+}
+
+.Sinopsis {
+
+
+  font-family: cursive;
+  font-size: 13px;
+  text-decoration: none;
+  justify-content: space-between;
+
+}
+
+.imagen-Sinopsis {
+
+  height: 50px;
+  width: 90px;
+
+
+}
+
+.Sinopsis h2 {
+  padding: 8px;
+  margin: 5px;
+  background-color: rgba(41, 191, 236, 0.938);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 3px solid black;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.contenedor p {
+
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 15px;
+
+
+}
+
+.contenedor {
+  display: flex;
+
+}
+
+.Personajes h2 {
+  padding: 10px;
+  margin: 5px;
+  background-color:rgba(41, 191, 236, 0.938);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 3px solid black;
+  font-size: 10px 
+  justify-content center;
+  align-items: center;
+
+}
+
+.container {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/*Estilos para items de grid*/
+.grid-item {
+  background-color:rgba(112, 197, 223, 0.685);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  width: 180px;
+  margin: 10px;
+
+}
+
+.grid-item img {
+  width: 100px;
+  border-radius: 50%;
+
+}
+
+.contenedor1 {
+  display: flex;
+
+
+}
+
+.miraLaSerie {
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-decoration: none
+}
+
+
+
+.miraLaSerie h2 {
+  padding: 10px;
+  margin: 5px;
+  background-color:rgba(41, 191, 236, 0.938);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 3px solid black;
+  font-size: 15px;
+ 
+}
+.contenedor1{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+
+}
+
+.contenedor1 img {
+
+  height: 150px;
+  display: flex;
+  width: 150px;
+  float: left;
+  padding: 5px;
+  margin: 10px;
+
+
+}
+
+.contenedor1 p {
+
+  font-family: cursive;
+  padding: 30px;
+  margin: 30px;
+  justify-content: center;
+  display: flex;
+
+
+
+}
+
+.contenedor2 {
+  display: flex
+ 
+
+}
+.contenedor2{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+}
+
+
+
+.contenedor2 p {
+
+  font-size: 15px;
+  font-family: cursive;
+  padding: 20px;
+  margin: 30px;
+  justify-content: center
+}
+
+
+
+
+
+/*Comienzo estilos footer*/
+
+footer {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaC2XqS9XUHnyf6NCu5_TNCQvJq-GBatwA_g&usqp=CAU);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: cursive;
+
+}
+
+footer div nav ul {
+  list-style: none;
+  align-items: center;
+
+}
+
+footer div nav ul li {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(221, 224, 35);
+  border: 3px solid black;
+  font-size: 15px;
+  display: flex;
+
+}
+
+footer div nav ul li {
+  color: rgb(9, 168, 168);
+  font-family: cursive;
+}
+footer div nav ul li svg{
+  color:black
+}

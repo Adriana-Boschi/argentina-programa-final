@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final</title>
+    <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <div>
+            <img class="Imagen personajes"
+                src="data:image/jpeg;base64,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"
+                alt="imagen personajes">
+            <img class="Imagen logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIA7H2WRNFe3zIqFEX0c5TVe-lpj4Q9ysmw&usqp=CAU"
+                alt="logo imagen">
+        </div>
+
+
+
+        <nav>
+            <ul>
+                <li> 
+                    <a href="#Sinopsis"> 
+                       <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Sinopsis</font>
+                       </font>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Personajes"> 
+                        <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Personajes</font>
+                        </font> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#miráLaSerie"> 
+                        <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Mirá la Serie</font>
+                        </font> 
+                    </a>
+                </li>
+                <li>
+                
+                    <a href="#quiénSoy"> 
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Quién Soy</font>
+                            </font> 
+   
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!--Contenido-->
+    <main>
+
+        <section class="Sinopsis" id="Sinopsis">
+            <h2>Sinopsis</h2>
+            <div class="contenedor">
+              <img class="imagen-sinopsis"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhxFj46ha5WX1zoJuo6sIZJP3AdvKBGku8Q&usqp=CAU"
+                alt="imagen de los personajes">
+              
+            
+              
+                <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
+                    egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa
+                    de su hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y
+                    no muy listo. Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del
+                    cosmos y universos paralelos. Y es mediante tantas vivencias y reflexiones que Rick busca que su nieto
+                    Morty no acabe como su padre, Jerry, un hombre muy poco exitoso que a pesar de tener buenas intenciones
+                    resulta ser bastante inútil en muchas ocasiones y depende mucho de su esposa, Beth, hija de Rick.
+                    A pesar de estar muy apegados, Rick y su nieto experimentan momentos en los que Summer, hermana de
+                    Morty, se une en ocasiones a las pintorescas aventuras provocadas por Rick.
+                    Creado por Justin Roiland y Dan Harmon.
+                    Lanzamiento: año 2013.
+                    País de origen: Estados Unidos.
+                  
+                </p>
+                
+            </div>  
+
+        </section>
+
+
+
+
+        <section class="Personajes"id="Personajes" >
+            <h2>Personajes</h2>
+
+            <div class="container">
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZxOswubwSUOIIBDexXjDY4dEdOMH8wpYQA&usqp=CAU"
+                        alt="imagen Rick Sánchez">
+                    <h3>Rick Sánchez</h3>
+                    <p>Género: masculino</p>
+                    <p>Especie: humano</p>
+                    <p>Estado: vivo</p>
+
+
+                </div>
+
+            </div>
+
+
+    
+        <section class="miráLaSerie"id= "miráLaSerie">
+          <h2>¡Mirá la serie!</h2>
+           <div class=" contenedor1" >
+                <img src="data:image/jpeg;base64,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"
+                    alt="logo de HBO Max">
+                 <p>Las 6 temporadas de Rick and Morty están disponibles en HBO Max. Tiene un total de 61 episodios.</p>
+            </div>
+
+        </section>
+
+        <section class=quiénSoy id="quiénSoy" >
+            <h2>¿Quién soy?</h2>
+            <div class="contenedor2">
+                <p>Mi nombre es Adriana Boschi, docente de Nivel Inicial y docente de Nivel Primario. Siempre me desempeñé
+                  en Salita de 4 y 1° grado. Desde 2013 comencé este camino con la tecnología (a la que odiaba con todas
+                  mis fuerzas)
+                  y hoy, es a lo que quiero dedicarme. Me fascina y me desafía. Mi primer trabajo
+                  fue analizar
+                  el Titanic utilizando Power Bi: creí que me hundiría con él. Y finalmente logré hundirlo. Y aquí estoy,
+                  iniciando una página web. Es un camino de ida.....y ya lo empecé......🤦‍♀️🤦‍♀️
+                 ¡Sé que podré lograrlo!
+                </p>
+            </div>
+        </section>
+
+    </main>
+    <!--Pie de página-->
+    <Footer>
+        <div>
+            <h3>Hecho con <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                </svg>por Adriana Boschi</h3>
+            <p>Argentina Programa</p>
+            <p>Profe todo terreno: Gabriel Alberini</p>
+            <p>Marzo 2023</p>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Adriana-Boschi" target="_blank">     
+                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                                  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <path
+                                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                                  </path>
+                              </svg>
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Perfil de GitHub </font> 
+                             </font>   
+                       </a> 
+                    </li>
+                    <li>
+                        <a href="https://outlook.live.com/mail/0/" target="_blank">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24"
+                                 height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                 <path
+                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                 </path>
+                              </svg>
+                              <font style="vertical-align: inherit;">
+                                 <font style="vertical-align: inherit;">Contactame </font> 
+                              </font>
+                      </a>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </Footer>
+
+</body>
+
+</html>
